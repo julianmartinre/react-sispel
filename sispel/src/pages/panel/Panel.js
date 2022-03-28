@@ -3,8 +3,10 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 import PanelButton from "./PanelButton";
 import Css from './../css/App.css';
+import { useNavigate  } from "react-router-dom";
 
 function Panel() {
+
     return (
       <>
       <br />
@@ -22,7 +24,7 @@ function Panel() {
                 </Col>
                 <Col xs={6} md={4}>
                     <div className="d-grid gap-2">
-                    <PanelButton name="Productos" style="primary" icon={<Icon.Box className="bootstrap-icon" color="white" size={40} />}></PanelButton>
+                    <PanelButton name="Productos" style="primary" route="/producto" icon={<Icon.Box className="bootstrap-icon" color="white" size={40} />}></PanelButton>
                     </div>
                 </Col>
             </Row>
