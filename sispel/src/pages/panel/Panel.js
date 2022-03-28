@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
+import PanelButton from "./PanelButton";
 import Css from './../css/App.css';
 
 function Panel() {
@@ -11,26 +12,17 @@ function Panel() {
             <Row>
                 <Col xs={6} md={4}>
                     <div className="d-grid gap-2">
-                        <Button variant="primary" size="lg">
-                             Empleados
-                             <Icon.PeopleFill className="bootstrap-icon" color="white" size={40} />
-                        </Button>
+                        <PanelButton name="Empleados" style="primary" icon={<Icon.PeopleFill className="bootstrap-icon" color="white" size={40} />}></PanelButton>              
                     </div>
                 </Col>
                 <Col xs={6} md={4}>
                     <div className="d-grid gap-2">
-                        <Button variant="secondary" size="lg">
-                            Clientes
-                            <Icon.People className="bootstrap-icon" color="white" size={40} />
-                        </Button>
+                        <PanelButton name="Clientes" style="secondary" icon={<Icon.People className="bootstrap-icon" color="white" size={40} />}></PanelButton>
                     </div>
                 </Col>
                 <Col xs={6} md={4}>
                     <div className="d-grid gap-2">
-                        <Button variant="primary" size="lg">
-                            Productos
-                            <Icon.Box className="bootstrap-icon" color="white" size={40} />
-                        </Button>
+                    <PanelButton name="Productos" style="primary" icon={<Icon.Box className="bootstrap-icon" color="white" size={40} />}></PanelButton>
                     </div>
                 </Col>
             </Row>
@@ -38,29 +30,20 @@ function Panel() {
             <Row>
                 <Col xs={6} md={4}>
                     <div className="d-grid gap-2">
-                        <Button variant="primary" size="lg">
-                            Turnos
-                            <Icon.Calendar2Check className="bootstrap-icon" color="white" size={40} />
-                        </Button>
+                        <PanelButton name="Turnos" style="primary" icon={<Icon.Calendar2Check className="bootstrap-icon" color="white" size={40} />}></PanelButton>              
                     </div>
                 </Col>
                 <Col xs={6} md={4}>
                     <div className="d-grid gap-2">
-                        <Button variant="secondary" size="lg">
-                            Servicios
-                            <Icon.Search className="bootstrap-icon" color="white" size={40} />
-                        </Button>
+                        <PanelButton name="Servicios" style="secondary" icon={<Icon.Search className="bootstrap-icon" color="white" size={40} />}></PanelButton>
                     </div>
                 </Col>
                 <Col xs={6} md={4}>
                     <div className="d-grid gap-2">
-                        <Button variant="primary" size="lg">
-                            Promociones
-                            <Icon.Percent className="bootstrap-icon" color="white" size={40} />
-                        </Button>
+                    <PanelButton name="Promociones" style="primary" icon={<Icon.Percent className="bootstrap-icon" color="white" size={40} />}></PanelButton>
                     </div>
                 </Col>
-            </Row>
+            </Row>          
         </Container>   
       </>
     );
