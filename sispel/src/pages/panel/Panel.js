@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 import PanelButton from "./PanelButton";
 import Css from './../css/App.css';
@@ -13,7 +13,7 @@ function Panel() {
             <Row>
                 <Col xs={6} md={4}>
                     <div className="d-grid gap-2">
-                        <PanelButton name="Empleados" style="primary" route="/empleado" icon={<Icon.PeopleFill className="bootstrap-icon" color="white" size={40} />}></PanelButton>              
+                        <PanelButton name="Usuarios" style="primary" route="/usuario" icon={<Icon.PeopleFill className="bootstrap-icon" color="white" size={40} />}></PanelButton>              
                     </div>
                 </Col>
                 <Col xs={6} md={4}>

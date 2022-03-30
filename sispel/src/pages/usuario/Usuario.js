@@ -1,12 +1,12 @@
 import React from "react";
 import ABMPanel from "../shared/ABMPanel";
 
-export default function Empleado(){
+export default function Usuario(){
 
     return(
         <>
             <br />
-            <ABMPanel title="Empleado" route="empleado" />
+            <ABMPanel title="Usuario" route="Usuario" />
         </>
     );
 }
